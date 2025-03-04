@@ -5,12 +5,14 @@
 ## **Abstract**
 
 This project report presents the design and implementation of a computer networking model for Sheridan College's Davis Campus. The model connects all wings of the campus using routers, multilayer switches, normal switches, DHCP, DNS, VLANs, and Wi-Fi. Additionally, the campus-wide Wi-Fi is integrated with an ISP (Internet Service Provider) to ensure reliable internet connectivity.
+
 ---
 
 ## **Introduction**
 
 Sheridan College’s Davis Campus spans multiple wings, requiring robust and scalable network infrastructure for faculty, staff, and students. This project focuses on creating a comprehensive wired and wireless network, leveraging VLANs, DHCP, DNS, and ISP-based Wi-Fi to ensure efficient traffic management and seamless internet access throughout the campus.
 ![Map](https://assets.isu.pub/document-structure/240820180726-ff1f497035e3f161df3e54ae53f6e83d/v1/645241c014ce217f3cb44f06e3c5f685.jpeg)
+
 ---
 
 ### **2. Job Market Page**
