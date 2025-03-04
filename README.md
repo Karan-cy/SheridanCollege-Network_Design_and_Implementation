@@ -14,33 +14,36 @@ Sheridan College’s Davis Campus spans multiple wings, requiring robust and sca
 
 ---
 
-### **2. Job Market Page**
-- Displays current job market trends using hardcoded data:
-  - *Tech Sector (+15% growth), Healthcare (+12% demand increase), Remote Work (30% of new positions).*
-- Provides users with an overview of emerging opportunities in key industries.
-- Includes an **"Explore Roadmap"** button for further exploration.
+### **Objectives**
+•	Design a network connecting all wings of Davis Campus.
+•	Implement VLANs for traffic segmentation.
+•	Configure DHCP for automated IP address allocation.
+•	Set up DNS for name resolution.
+•	Establish campus-wide Wi-Fi connected to an ISP for internet access
 
-![Job Market Page](https://pplx-res.cloudinary.com/image/upload/v1740305764/user_uploads/KYGJLkmvTzahKNb/Screenshot-2025-02-23-051506.jpg)
 
----
-
-### **3. Roadmap Page**
-- Highlights top industries with growth rates and available jobs:
-  - Example Industries: *Technology, Healthcare, Finance, Manufacturing, Education.*
-- Each industry card includes:
-  - Growth Rate (e.g., High, Moderate).
-  - Available Jobs (e.g., 50,000+).
-  - A **"View Opportunities"** button for further exploration.
-
-![Roadmap Page](https://pplx-res.cloudinary.com/image/upload/v1740305739/user_uploads/qcYYrQOKfgsiLRQ/image_2025-02-23_051538106.jpg)
+![Job Market Page](/images/desgin.png)
 
 ---
 
-## **Tech Stack**
+### **Network Design**
+**•	Topology**
+1.Core layer: A router acts as the campus gateway, managing inter-VLAN and ISP connectivity.
+2.Distribution Layer: Multilayer switches facilitate VLAN and traffic management.
+3.Access Layer: Normal switches and wireless access points connect device within each wing.
+**•	Network Wings** 
+The campus network is divided into seven wings, each consisting of a Layer 2 switch, along with PCs, smartphones, laptops, and printers to facilitate user connectivity. These wings are interconnected to a central Layer 3 switch, which is responsible for inter-VLAN routing. Each wing operates on its own VLAN, allowing for network segmentation and improved performance by isolating broadcast traffic within each wing. The Layer 3 switch ensures efficient communication between VLANs, providing both security and scalability. This design optimizes network traffic, enhances security, and simplifies management by logically separating each wing’s network.
+**•	Internet Connectivity**
+The main campus router connects to an ISP, providing internet access to all wired and wireless devices through a centralized network.
 
-### **Frontend**
-- **React**: For building dynamic user interfaces.
-- **TypeScript**: Ensures type safety and improves code maintainability.
+
+---
+
+## **Device Configuration**
+
+### **Router:**
+- **1.	RouterforCampus**: Firstly we will type the below commands in the IOS CLI of the RouterforCampus to initiate all the phases of the router which are to connected to it. ![CLI commands](/images/Router%20cmd%201.png)
+- **2.	RouterforServer**: Here we are going to configure a routerforserver which is going to perform routing between a campus network and a college email server.![CLI commands](/images/Picture3.png)
 - **Tailwind CSS**: For rapid styling and consistent design.
 
 ### **Routing**
