@@ -43,7 +43,7 @@ The main campus router connects to an ISP, providing internet access to all wire
 
 ### **Router:**
 - **1.	RouterforCampus**: Firstly we will type the below commands in the IOS CLI of the RouterforCampus to initiate all the phases of the router which are to connected to it. ![CLI commands](/images/Router%20cmd%201.png)
-- **2.	RouterforServer**: Here we are going to configure a routerforserver which is going to perform routing between a campus network and a college email server.![CLI commands](/images/Picture3.png)
+- **2.	RouterforServer**: Here we are going to configure a routerforserver which is going to perform routing between a campus network and a college email server.![CLI commands](/images/router%20cmd%202.png)
 - **Tailwind CSS**: For rapid styling and consistent design.
 
 ### **Routing**
